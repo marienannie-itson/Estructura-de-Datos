@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public abstract class Bolsa {
     protected int tamBolsa;
     protected int numObjetos;
-    protected ArrayList<String> objetos;
+    protected ArrayList<Integer> objetos;
 
     public Bolsa(int tamBolsa){
         this.tamBolsa = tamBolsa;
@@ -13,11 +13,11 @@ public abstract class Bolsa {
 
     public abstract int obtenNumObjetos();
     public abstract boolean vacia();
-    public abstract boolean agrega(String objeto);
-    public abstract String remueve();
-    public abstract String remueve(String objeto);
+    public abstract boolean agrega(Integer objeto);
+    public abstract Integer remueve();
+    public abstract Integer remueve(Integer objeto);
     public abstract void limpia();
-    public abstract int cuenta(String objeto);
-    public abstract boolean contiene(String objeto);
-    public abstract ArrayList<String> obtenObjetos();
+    public abstract int cuenta(Integer objeto);
+    public abstract boolean contiene(Integer objeto);
+    public abstract ArrayList<Integer> obtenObjetos();
 }
