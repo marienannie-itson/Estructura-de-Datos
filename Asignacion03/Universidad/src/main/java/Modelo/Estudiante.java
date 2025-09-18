@@ -10,4 +10,7 @@ public class Estudiante extends Persona {
         this.carrera = carrera;
         this.semestre = semestre;
     }
+
+    public String getCarrera() { return this.carrera; }
+    public int getSemestre() { return this.semestre; }
 }

@@ -7,4 +7,6 @@ public class Profesor extends Persona {
         super(nombre, id, correo);
         this.departamento = departamento;
     }
+
+    public String getDepartamento() { return departamento; }
 }

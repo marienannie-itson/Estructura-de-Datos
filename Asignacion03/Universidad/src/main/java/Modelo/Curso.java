@@ -10,4 +10,8 @@ public class Curso {
         this.codigoCurso = codigoCurso;
         this.profesor = profesor;
     }
+
+    public String getNombreCurso() { return nombreCurso; }
+    public String getCodigoCurso() { return codigoCurso; }
+    public Profesor getProfesor() { return profesor; }
 }
