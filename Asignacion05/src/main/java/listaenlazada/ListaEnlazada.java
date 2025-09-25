@@ -73,5 +73,19 @@ public class ListaEnlazada<T> {
         return count;
     }
     
+    public T obtenerPrimero(){
+        if (cabeza == null ) throw new RuntimeException("Lista Vacía");
+        return cabeza.dato;
+    }
     
+    public T obtenerUltimo() {
+        if (cabeza == null ) throw new RuntimeException("Lista Vacía");
+        Nodo<T> temp = cabeza;
+        while (temp.siguiente != null) temp = temp.siguiente;
+        return temp.dato;
+    }
+    
+    public void limpiar() {
+        cabeza = null;
+    }
 }
